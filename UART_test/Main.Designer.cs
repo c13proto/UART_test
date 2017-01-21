@@ -30,10 +30,10 @@
         {
             this.textBox_send = new System.Windows.Forms.TextBox();
             this.button_send = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.button_connect = new System.Windows.Forms.Button();
             this.comboBox_COMポート = new System.Windows.Forms.ComboBox();
             this.comboBox_ボーレート = new System.Windows.Forms.ComboBox();
+            this.checkBox_Convert = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox_send
@@ -45,7 +45,7 @@
             // 
             // button_send
             // 
-            this.button_send.Location = new System.Drawing.Point(213, 29);
+            this.button_send.Location = new System.Drawing.Point(172, 52);
             this.button_send.Name = "button_send";
             this.button_send.Size = new System.Drawing.Size(59, 21);
             this.button_send.TabIndex = 1;
@@ -53,18 +53,9 @@
             this.button_send.UseVisualStyleBackColor = true;
             this.button_send.Click += new System.EventHandler(this.Click_send);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(180, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "+\'\\n\'";
-            // 
             // button_connect
             // 
-            this.button_connect.Location = new System.Drawing.Point(213, 0);
+            this.button_connect.Location = new System.Drawing.Point(172, 1);
             this.button_connect.Name = "button_connect";
             this.button_connect.Size = new System.Drawing.Size(59, 23);
             this.button_connect.TabIndex = 4;
@@ -92,15 +83,25 @@
             this.comboBox_ボーレート.Text = "ボーレート";
             this.comboBox_ボーレート.SelectedIndexChanged += new System.EventHandler(this.SelectedIndexChanged_ボーレート);
             // 
+            // checkBox_Convert
+            // 
+            this.checkBox_Convert.AutoSize = true;
+            this.checkBox_Convert.Location = new System.Drawing.Point(8, 55);
+            this.checkBox_Convert.Name = "checkBox_Convert";
+            this.checkBox_Convert.Size = new System.Drawing.Size(132, 16);
+            this.checkBox_Convert.TabIndex = 7;
+            this.checkBox_Convert.Text = "Convert(10 chars + ;)";
+            this.checkBox_Convert.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 60);
+            this.ClientSize = new System.Drawing.Size(235, 85);
+            this.Controls.Add(this.checkBox_Convert);
             this.Controls.Add(this.comboBox_ボーレート);
             this.Controls.Add(this.comboBox_COMポート);
             this.Controls.Add(this.button_connect);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_send);
             this.Controls.Add(this.textBox_send);
             this.Name = "Main";
@@ -114,10 +115,10 @@
 
         private System.Windows.Forms.TextBox textBox_send;
         private System.Windows.Forms.Button button_send;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_connect;
         private System.Windows.Forms.ComboBox comboBox_COMポート;
         private System.Windows.Forms.ComboBox comboBox_ボーレート;
+        private System.Windows.Forms.CheckBox checkBox_Convert;
     }
 }
 

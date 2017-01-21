@@ -16,6 +16,7 @@ namespace UART_test
         bool CONNECTED = false;
         string COM_PORT = "COM1";
         int BAURATE = 9600;
+        const int COMMAND_LENGTH = 10;
         //arduinoのデフォルトは8bit、パリティなし、1ストップビット(SERIAL_8N1)
         SerialPort SERIAL;
         public Main()
@@ -27,7 +28,20 @@ namespace UART_test
 
         private void Click_send(object sender, EventArgs e)
         {
-            if (CONNECTED) SERIAL.Write(textBox_send.Text+'\n');
+            if (CONNECTED)
+            {
+                string org = textBox_send.Text;
+                if (checkBox_Convert.Checked)
+                {
+                    int length = org.Length;
+                    if (length > COMMAND_LENGTH) MessageBox.Show("コマンドは"+ COMMAND_LENGTH + "文字以下にしてください");
+                    else {
+                        for (int i = 0; i < COMMAND_LENGTH - length; i++) org += " ";//長さを10文字にする
+                        org += ';';
+                    }
+                }
+                SERIAL.Write(org);
+            }
         }
 
 

@@ -7,3 +7,12 @@ c:\users\ksuser\documents\visual studio 2015\Projects\UART_test\UART_test\obj\De
 c:\users\ksuser\documents\visual studio 2015\Projects\UART_test\UART_test\obj\Debug\UART_test.csproj.GenerateResource.Cache
 c:\users\ksuser\documents\visual studio 2015\Projects\UART_test\UART_test\obj\Debug\UART_test.exe
 c:\users\ksuser\documents\visual studio 2015\Projects\UART_test\UART_test\obj\Debug\UART_test.pdb
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\bin\Debug\UART_test.exe.config
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\obj\Debug\UART_test.exe
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\obj\Debug\UART_test.pdb
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\bin\Debug\UART_test.exe
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\bin\Debug\UART_test.pdb
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\obj\Debug\UART_test.csprojResolveAssemblyReference.cache
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\obj\Debug\UART_test.Main.resources
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\obj\Debug\UART_test.Properties.Resources.resources
+C:\Users\idry7lash629\Documents\GitHub\UART_test\UART_test\obj\Debug\UART_test.csproj.GenerateResource.Cache
